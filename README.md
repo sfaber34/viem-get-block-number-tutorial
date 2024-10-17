@@ -132,9 +132,7 @@ node getBlockNumber.js
 📦 blocknumber: 20986305n
 ```
 
-&nbsp;
-&nbsp;
-😎 Not too bad for a few lines of code!
+😎 Not too bad for just a few lines of code!
 
 
 

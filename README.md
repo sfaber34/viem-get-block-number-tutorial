@@ -1,12 +1,12 @@
 # viem-get-block-number-tutorial
-This tutorial is a quickstart guide for how to use the [viem](https://viem.sh/) library to get the block number from your [BG Client Node](https://client.buidlguidl.com/).
+This tutorial is a quickstart guide for how to use the [viem](https://viem.sh/) library to get the currentblock number from your [BG Client Node](https://client.buidlguidl.com/).
 
 &nbsp;
-## Environmental Setup 📚
+## Environment Setup 📚
 
 🛠️ Before you begin, you need to make sure the following tools are installed:
 
-- [Node (>= v18.17)](https://nodejs.org/en/download/)
+- [Node](https://nodejs.org/en/download/)
 - [Yarn](https://yarnpkg.com/getting-started/install)
 
 &nbsp;
@@ -15,7 +15,7 @@ This tutorial is a quickstart guide for how to use the [viem](https://viem.sh/) 
 
 🏃‍♂️ Run the following commands to initialize a new yarn project. 
 
-```sh
+```bash
 mkdir viemScripts
 cd viemScripts
 yarn init -y

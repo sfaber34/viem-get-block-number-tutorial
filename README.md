@@ -131,6 +131,7 @@ node getBlockNumber.js
 ```sh
 📦 blocknumber: 20986305n
 ```
+
 &nbsp;
 &nbsp;
 😎 Not too bad for a few lines of code!

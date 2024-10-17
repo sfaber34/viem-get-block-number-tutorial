@@ -6,7 +6,7 @@ This tutorial is a quickstart guide for how to use [viem](https://viem.sh/) to g
 Before you begin, you need to install the following tools:
 
 - [Node (>= v18.17)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
+- [Yarn](https://yarnpkg.com/getting-started/install)
 
 
 ## Project Setup 📚

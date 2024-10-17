@@ -43,7 +43,10 @@ touch getBlockNumber.js
 import { createPublicClient, http } from "viem";
 ```
 
-🕵️ OK, now we need to add a viem client to connect with your BG node. You will need to check the upper-right corner of the BG Client terminal dashboard to find the local IP address of your BG client. Replace `XXX.XXX.X.XX` with your BG client's local IP address. The transport is using port 8545, which is the default port for execution layer client RPC traffic.
+🕵️ OK, now we need to add a viem client to connect with your BG node. You will need to check the upper-right corner of the BG Client terminal dashboard to find the local IP address of your BG client. 
+![BG Client Local IP](bgClientLocalIP.png)
+
+✍️ Add the following code to your script, replacing `XXX.XXX.X.XX` with your BG client's local IP address. The transport is using port 8545, which is the default port for execution layer client RPC traffic.
 
 ```js
 const client = createPublicClient({

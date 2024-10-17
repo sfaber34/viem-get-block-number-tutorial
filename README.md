@@ -8,7 +8,8 @@ This tutorial is a quickstart guide for how to use the [viem](https://viem.sh/) 
 - [Node (>= v18.17)](https://nodejs.org/en/download/)
 - [Yarn](https://yarnpkg.com/getting-started/install)
 
-
+<br>
+<br>
 ## Project Setup 📚
 
 🏃‍♂️ Run the following commands to initialize a new yarn project. 
@@ -36,7 +37,7 @@ touch getBlockNumber.js
 
 ## Writing the Script 📝
 
-➕ Now we're ready to start adding code! Open `getBlockNumber.js` and add this line to the top of the file to import viem:
+➕ Now we're ready to start adding code! Open `getBlockNumber.js` and add this line to the top of the file to import the viem library:
 
 ```js
 import { createPublicClient, http } from "viem";
@@ -74,7 +75,7 @@ async function getBlockNumber() {
 ```
 
 
-➕ And there's one last edit to make to our script. Let's add a line to call our function at the end of the file.
+➕ And there's one last edit to make to our script. Let's add a line to call `getBlockNumber()` at the end of the file.
 
 ```js
 getBlockNumber();

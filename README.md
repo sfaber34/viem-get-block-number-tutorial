@@ -101,7 +101,7 @@ async function getBlockNumber() {
 
 getBlockNumber();
 ```
-> Just make sure to replace the client transport IP address with your own BG client's local IP address (or `http://localhost:8545` if your script and node are on the same machine).
+> 🤨 Just make sure to replace the client transport IP address with your own BG client's local IP address (or `http://localhost:8545` if your script and node are on the same machine).
 
 
 🧺 Now there's just one more housekeeping task to do before we can run our script. We need to tell Node.js to treat our script as a module. Open up `package.json` and add `"type": "module"` to the end of the viemScripts object so that it looks like:

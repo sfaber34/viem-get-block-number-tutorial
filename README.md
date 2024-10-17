@@ -1,5 +1,5 @@
 # viem-get-block-number-tutorial
-Tutorial for how to get block number from a BG node.
+This tutorial is a quickstart guide for how to use [viem](https://viem.sh/) to get the block number from your local BG node.
 
 ## Environmental Setup 📚
 
@@ -36,14 +36,14 @@ touch getBlockNumber.js
 
 ## Writing the Script 📚
 
-Now we're ready to start adding code! First, we need to import viem with this at the top of the file:
+Now we're ready to start adding code! Open `getBlockNumber.js` and add this line to the top of the file to import viem:
 
 ```js
 import { createPublicClient, http } from "viem";
 ```
 
 
-OK, now we need to add a client to connect with your BG node. You will need to check the upper-right corner of the BG Client terminal dashboard to find the local IP address of your BG client. This snippet tells the script to connect to our BG node at local IP: 192.168.1.42 (yours will differ). It's using port 8545, which is the default port for execution layer client RPC traffic.
+OK, now we need to add a viem client to connect with your BG node. You will need to check the upper-right corner of the BG Client terminal dashboard to find the local IP address of your BG client. This snippet tells the script to connect to our BG node at local IP: 192.168.1.42 (yours will differ). It's using port 8545, which is the default port for execution layer client RPC traffic.
 
 ```js
 const client = createPublicClient({
@@ -100,10 +100,10 @@ async function getBlockNumber() {
 
 getBlockNumber();
 ```
-> Just make sure to replace the IP address with your own BG client's local IP address (or `localhost` if your script and node are on the same machine).
+> Just make sure to replace the client transport IP address with your own BG client's local IP address (or `http://localhost:8545` if your script and node are on the same machine).
 
 
-Now there's just one more housekeeping task to do before we can run our script. Open up `package.json` and add `"type": "module"` to the end of the viemScripts object so that it looks like:
+Now there's just one more housekeeping task to do before we can run our script. We need to tell Node.js to treat our script as a module. Open up `package.json` and add `"type": "module"` to the end of the viemScripts object so that it looks like:
 
 ```json
 {
@@ -131,6 +131,8 @@ You should see the following output:
 ```sh
 📦 blocknumber: 20986305n
 ```
+
+Not too bad for a few lines of code!
 
 
 

@@ -8,8 +8,8 @@ This tutorial is a quickstart guide for how to use the [viem](https://viem.sh/) 
 - [Node (>= v18.17)](https://nodejs.org/en/download/)
 - [Yarn](https://yarnpkg.com/getting-started/install)
 
-<br>
-<br>
+&nbsp;
+&nbsp;
 ## Project Setup 📚
 
 🏃‍♂️ Run the following commands to initialize a new yarn project. 

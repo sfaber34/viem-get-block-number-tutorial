@@ -21,13 +21,11 @@ cd viemScripts
 yarn init -y
 ```
 
-
 🏃‍♀️ Now run this line to add the viem package to your yarn project.
 
 ```sh
 yarn add viem
 ```
-
 
 ➕ Create a new file in the root of your project called `getBlockNumber.js`. You can do that within your text editor or if you're fancy, run this:
 
@@ -35,7 +33,8 @@ yarn add viem
 touch getBlockNumber.js
 ```
 
-
+&nbsp;
+&nbsp;
 ## Writing the Script 📝
 
 ➕ Now we're ready to start adding code! Open `getBlockNumber.js` and add this line to the top of the file to import the viem library:
@@ -43,7 +42,6 @@ touch getBlockNumber.js
 ```js
 import { createPublicClient, http } from "viem";
 ```
-
 
 🕵️ OK, now we need to add a viem client to connect with your BG node. You will need to check the upper-right corner of the BG Client terminal dashboard to find the local IP address of your BG client. Replace `XXX.XXX.X.XX` with your BG client's local IP address. The transport is using port 8545, which is the default port for execution layer client RPC traffic.
 
@@ -61,7 +59,6 @@ const client = createPublicClient({
 });
 ```
 
-
 ➕ Next, let's add a function to get the block number from our local node and print it to the console.
 
 ```js
@@ -74,7 +71,6 @@ async function getBlockNumber() {
   }
 }
 ```
-
 
 ➕ And there's one last edit to make to our script. Let's add a line to call `getBlockNumber()` at the end of the file.
 
@@ -120,6 +116,8 @@ getBlockNumber();
 }
 ```
 
+&nbsp;
+&nbsp;
 ## Running your Get Block Number Script 📚
 
 🏃‍♂️ Run this to execute your script:

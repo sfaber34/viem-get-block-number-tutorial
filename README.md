@@ -1,6 +1,7 @@
 # viem-get-block-number-tutorial
 This tutorial is a quickstart guide for how to use the [viem](https://viem.sh/) library to get the block number from your [BG Client Node](https://client.buidlguidl.com/).
 
+&nbsp;
 ## Environmental Setup 📚
 
 🛠️ Before you begin, you need to make sure the following tools are installed:

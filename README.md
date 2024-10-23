@@ -14,7 +14,7 @@ This tutorial is a quickstart guide for how to use the [viem](https://viem.sh/) 
 &nbsp;
 ## Project Setup 📚
 
-🏃‍♂️ Run the following commands to initialize a new yarn project. 
+🏃‍♂️ Run the following commands to create a new project directory and initialize a new [yarn](https://yarnpkg.com/getting-started/install) project. 
 
 ```sh
 mkdir viemScripts
@@ -22,7 +22,7 @@ cd viemScripts
 yarn init -y
 ```
 
-🏃‍♀️ Now run this line to add the viem package to your yarn project.
+🏃‍♀️ Now run this line to add the [viem](https://viem.sh/) package to your [yarn](https://yarnpkg.com/getting-started/install) project.
 
 ```sh
 yarn add viem
@@ -62,7 +62,7 @@ import { createPublicClient, http } from "viem";
 🕵️ OK, now we need to add a viem client to connect with your BG node. You will need to check the upper-right corner of the BG Client terminal dashboard to find the local IP address of your BG client. 
 ![BG Client Local IP](bgClientLocalIP.png)
 
-✍️ Add the following code to your script, replacing `XXX.XXX.X.XX` with your BG client's local IP address. The transport is using port 8545, which is the default port for execution layer client RPC traffic.
+✍️ Add the following code to your script, replacing `XXX.XXX.X.XX` with your BG client's local IP address. The transport is using port 8545, which is the default port for [execution layer](https://ethereum.org/en/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) (BG Client uses [Reth](https://reth.rs/) by default) client RPC traffic.
 
 ```js
 const client = createPublicClient({

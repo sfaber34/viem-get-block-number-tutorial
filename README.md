@@ -62,7 +62,7 @@ import { createPublicClient, http } from "viem";
 🕵️ OK, now we need to add a viem client to connect with your BG node. You will need to check the upper-right corner of the BG Client terminal dashboard to find the local IP address of your BG client. 
 ![BG Client Local IP](bgClientLocalIP.png)
 
-✍️ Add the following code to your script, replacing `XXX.XXX.X.XX` with your BG client's local IP address. The transport is using port 8545, which is the default port for [execution layer](https://ethereum.org/en/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) (BG Client uses [Reth](https://reth.rs/) by default) client RPC traffic.
+✍️ Add the following code to your script, replacing `XXX.XXX.X.XX` with your BG client's local IP address. The transport is using port 8545, which is the default port for [execution layer](https://ethereum.org/en/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) (BG Client uses <a href="https://reth.rs/" target="_blank">Reth</a> by default) client RPC traffic.
 
 ```js
 const client = createPublicClient({

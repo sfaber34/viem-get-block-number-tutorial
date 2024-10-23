@@ -1,5 +1,6 @@
-# viem-get-block-number-tutorial
-This tutorial is a quickstart guide for how to use the [viem](https://viem.sh/) library to get the currentblock number from your [BG Client Node](https://client.buidlguidl.com/).
+# Using viem to get the current block number from your BG Client Node
+
+This tutorial is a quickstart guide for how to use the [viem](https://viem.sh/) library to get the current block number from your [BG Client Node](https://client.buidlguidl.com/).
 
 &nbsp;
 ## Environment Setup 📚
@@ -15,7 +16,7 @@ This tutorial is a quickstart guide for how to use the [viem](https://viem.sh/) 
 
 🏃‍♂️ Run the following commands to initialize a new yarn project. 
 
-```bash
+```sh
 mkdir viemScripts
 cd viemScripts
 yarn init -y
@@ -31,6 +32,21 @@ yarn add viem
 
 ```sh
 touch getBlockNumber.js
+```
+
+🧺 Now there's just one more housekeeping task to do before we can start writing our script. We need to tell Node.js to treat our script as a module. Open up `package.json` and add `"type": "module"` to the end of the viemScripts object so that it looks like:
+
+```json
+{
+  "name": "viemScripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.21.28"
+  },
+  "type": "module"
+}
 ```
 
 &nbsp;
@@ -102,22 +118,6 @@ async function getBlockNumber() {
 getBlockNumber();
 ```
 > 🤨 Just make sure to replace the client transport IP address with your own BG client's local IP address (or `http://localhost:8545` if your script and node are on the same machine).
-
-
-🧺 Now there's just one more housekeeping task to do before we can run our script. We need to tell Node.js to treat our script as a module. Open up `package.json` and add `"type": "module"` to the end of the viemScripts object so that it looks like:
-
-```json
-{
-  "name": "viemScripts",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "viem": "^2.21.28"
-  },
-  "type": "module"
-}
-```
 
 &nbsp;
 &nbsp;

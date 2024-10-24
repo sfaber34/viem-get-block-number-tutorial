@@ -78,7 +78,7 @@ const client = createPublicClient({
 });
 ```
 
-➕ Next, let's add a function that uses the viem [`getBlockNumber()`](https://viem.sh/docs/actions/public/getBlockNumber) [public action](https://viem.sh/docs/actions/public/introduction) to get the block number from our local node and print it to the console. The `catch (error)` should help out with debugging information if something happens to go wrong.
+➕ Next, let's add a function that uses the viem [`getBlockNumber()`](https://viem.sh/docs/actions/public/getBlockNumber) [public action](https://viem.sh/docs/actions/public/introduction) to get the block number from our local node and print it to the console. The `catch (error)` statement will help out by printing debugging information if something happens to go wrong.
 
 ```js
 async function getBlockNumber() {
